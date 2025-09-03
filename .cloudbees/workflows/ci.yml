@@ -4,7 +4,7 @@ name: Main workflow
 on:
   push:
     branches:
-      - "**"
+      - '**'
   workflow_dispatch:
 permissions:
   scm-token-own: read
@@ -68,7 +68,7 @@ jobs:
         with:
           file-path: container-image.tar
           file-type: BINARY_CONTAINER
-          debug: "true"
+          debug: 'true'
       - name: Publish evidence
         uses: cloudbees-io/publish-evidence-item@v1
         with:
